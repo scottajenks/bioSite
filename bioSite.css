@@ -1,0 +1,85 @@
+/*Scott Jenks
+2/12/2023
+Module 7.3 - bioSite Development
+*/
+
+/*
+font-family: 'Bangers', cursive;
+font-family: 'Gudea', sans-serif;
+*/
+
+body {
+    margin: 0;
+}
+
+header {
+    background-color: #37659E;
+    color: #2F2F47;
+    text-align: center;
+    padding: 5px;
+    margin: 0;
+    font-weight: 400;
+    font-family: 'Bangers', cursive;
+    font-size: 3em;
+    letter-spacing: 10px;
+}
+
+
+#navbar {
+    background-color: #37659E;
+    font-family: 'Gudea', sans-serif;
+    overflow: hidden;
+    border-bottom: 5px #75EBAB solid;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: #2F2F47;
+    float: left;
+    text-align: center;
+    padding: 10px 16px;
+    font-size: 1.25em;
+}
+
+#navbar a:hover {
+    background-color: #75EBAB;
+    color: #2F2F47;
+    font-weight: bold;
+    border-radius: 10px 10px 0 0;
+}
+
+#container {
+    background-color: #2F2F47;
+}
+
+footer {
+    background-color: #37659E;
+    font-family: 'Gudea', sans-serif;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    border-top: 5px #75EBAB solid;
+}
+
+footer a {
+    color: #2F2F47;
+    text-decoration: none;
+    font-weight: 400;
+    float: right;
+    padding-right: 10px;
+}
+
+h1 {
+    margin: 0;
+}
+
+p {
+    font-family: 'Gudea', sans-serif;
+}
+
+.landingPic {
+    width: 450px;
+    height: 600px;
+    display: block;
+    margin: 0px auto;
+}
