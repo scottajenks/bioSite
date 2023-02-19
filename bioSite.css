@@ -13,9 +13,36 @@ body {
     scroll-behavior: smooth;
 }
 
+h1 {
+    margin: 0;
+    color: #262631;
+    font-family: 'Bangers', cursive;
+    font-size: 7em;
+    letter-spacing: 10px;
+}
+
+h3 {
+    font-family: 'Bangers', cursive;
+    font-size: 3em;
+    letter-spacing: 6px;
+    color: #5f7897;
+}
+
+h6 {
+    font-family: 'Gudea', sans-serif;
+    color: #5f7897;
+    font-size: 1.5em;
+}
+
+p {
+    font-family: 'Gudea', sans-serif;
+    color: #5f7897;
+    font-size: 1.25em;
+}
+
+/*Nav Bar CSS*/
 header {
     background-color: #37659E;
-    color: #2F2F47;
     text-align: center;
     padding: 5px;
     margin: 0;
@@ -31,43 +58,44 @@ header {
 
 #navbar a {
     text-decoration: none;
-    color: #2F2F47;
+    color: #262631;
     float: left;
     text-align: center;
-    padding: 10px 16px;
+    padding: 10px 20px;
     font-size: 1.25em;
 }
 
 #navbar a:hover {
     background-color: #75EBAB;
-    color: #2F2F47;
+    color: #262631;
     font-weight: 400;
     border-radius: 10px 10px 0 0;
 }
 
+/*Footer CSS*/
 footer {
     background-color: #37659E;
     font-family: 'Gudea', sans-serif;
     width: 100%;
     bottom: 0;
     border-top: 5px #75EBAB solid;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 footer a {
-    color: #2F2F47;
+    color: #262631;
     text-decoration: none;
     font-size: 1.15em;
 }
 
 footer a:first-of-type {
-    padding-left: 10px;
+    padding-left: 20px;
 }
 
 footer a:last-of-type {
     float: right;
-    padding-right: 10px;
+    padding-right: 20px;
 }
 
 footer a:hover {
@@ -76,39 +104,9 @@ footer a:hover {
     font-weight: bold;
 }
 
-h1 {
-    margin: 0;
-    font-family: 'Bangers', cursive;
-    font-size: 7em;
-    letter-spacing: 10px;
-}
-
-h3 {
-    font-family: 'Bangers', cursive;
-    font-size: 3em;
-    letter-spacing: 6px;
-    color: #8383C7;
-}
-
-h6 {
-    font-family: 'Gudea', sans-serif;
-    color: #8383C7;
-    font-size: 1.5em;
-}
-
-p {
-    font-family: 'Gudea', sans-serif;
-    color: #8383C7;
-}
-
-figcaption {
-    font-family: 'Gudea', sans-serif;
-    color: #8383C7;
-    text-align: center;
-}
-
+/*Index Page CSS*/
 #landingContainer {
-    background-color: #2F2F47;
+    background-color: #262631;
     overflow: hidden;
 }
 
@@ -122,16 +120,18 @@ figcaption {
 
 #landingContainer p {
     text-align: center;
-    font-size: 1.15em;
     margin: 20px auto;
     padding-bottom: 20px;
     width: 50%;
 }
 
+/*About Page CSSS*/
 #aboutContainer {
-    background-color: #2F2F47;
+    background-color: #262631;
     overflow: hidden;
-    text-align: center;
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .aboutPhotos {
@@ -148,17 +148,74 @@ figcaption {
     border-radius: 10px;
 }
 
+/*Career Page CSS*/
 #careerContainer {
-    background-color: #2F2F47;
+    background-color: #262631;
     overflow: hidden;
 }
 
+#careerContainer p {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: justify;
+}
+
+.box {
+    background-color: #75EBAB;
+    width: 50%;
+    text-align: center;
+    margin-left: 25%;
+    opacity: 80%;
+    font-size: .5em;
+}
+
+#professor {
+    background-image: url("bioSite images/College Professor.jpg");
+    padding-top: 300px;
+    padding-bottom: 300px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+}
+
+#shoreEx {
+    background-image: url("bioSite images/Shore\ Excursions.webp");
+    padding-top: 300px;
+    padding-bottom: 300px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#cruiseSales {
+    background-image: url("bioSite images/Next Cruise.webp");
+    padding-top: 300px;
+    padding-bottom: 300px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+}
+
+#disney {
+    background-image: url("bioSite images/Walt Disney World.webp");
+    padding-top: 300px;
+    padding-bottom: 300px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+}
+
+/*Hobbies Page CSS*/
 #hobbiesContainer {
-    background-color: #2F2F47;
+    background-color: #262631;
     overflow: hidden;
 }
 
-#hobbiesContainer h3 {
+#movies {
     text-align: center;
 }
 
@@ -205,7 +262,7 @@ figcaption {
 }
 
 .description {
-    color: #8383C7;
+    color: #4d4dce;
     font-size: 1.5em;
     padding: 5px;
     font-weight: bold;
