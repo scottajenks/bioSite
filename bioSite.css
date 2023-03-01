@@ -1,11 +1,15 @@
 /*Scott Jenks
-2/12/2023
-Module 7.3 - bioSite Development
+2/26/2023
+Module 12 - bioSite Final
 */
 
 /*
 font-family: 'Bangers', cursive;
 font-family: 'Gudea', sans-serif;
+color: #262631
+color: #5f7897
+color: #37659E
+color: #75EBAB
 */
 
 body {
@@ -27,7 +31,7 @@ h1 {
 
 h3 {
     font-family: 'Bangers', cursive;
-    font-size: 3em;
+    font-size: 2.75em;
     letter-spacing: 6px;
     color: #5f7897;
 }
@@ -41,14 +45,14 @@ h6 {
 p {
     font-family: 'Gudea', sans-serif;
     color: #5f7897;
-    font-size: 1.25em;
+    font-size: 1.30em;
+    font-weight: 400;
 }
 
 /*Nav Bar CSS*/
 header {
     background-color: #37659E;
     text-align: center;
-    padding: 5px;
     margin: 0;
 }
 
@@ -65,7 +69,7 @@ header {
     color: #262631;
     float: left;
     text-align: center;
-    padding: 10px 20px;
+    padding: 7px 20px;
     font-size: 1.25em;
 }
 
@@ -118,9 +122,9 @@ footer a:hover {
     width: 450px;
     height: 600px;
     display: block;
-    margin: 0px auto;
-    padding-top: 20px;
-    border-radius: 5%;
+    margin: 20px auto;
+    border-radius: 10%;
+    box-shadow: 0 4px 8px 0 #75EBAB, 0 6px 20px 0 #37659E;
 }
 
 #landingContainer p {
@@ -128,6 +132,7 @@ footer a:hover {
     margin: 20px auto;
     padding-bottom: 20px;
     width: 50%;
+    font-weight: 700;
 }
 
 /*About Page CSSS*/
@@ -148,14 +153,18 @@ footer a:hover {
     width: 30%;
     text-align: -50%;
     position: relative;
-    padding-left: 10px;
-    padding-right: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
     border-radius: 5%;
+    box-shadow: 0 4px 8px 0 #37659E, 0 6px 20px 0 #37659E;
 }
 
 .aboutLuiz {
-    width: 100%;
+    position: relative;
+    margin: auto;
+    width: 70%;
     text-align: justify;
+    font-weight: 400;
 }
 
 /*Career Page CSS*/
@@ -164,10 +173,16 @@ footer a:hover {
     overflow: hidden;
 }
 
-#careerContainer p {
+.info {
     padding-left: 20px;
     padding-right: 20px;
     text-align: justify;
+    width: 75%;
+    margin: auto;
+}
+
+.info p {
+    font-weight: 700;
 }
 
 .box {
@@ -175,14 +190,22 @@ footer a:hover {
     width: 50%;
     text-align: center;
     margin-left: 25%;
-    opacity: 80%;
+    opacity: 85%;
     font-size: .5em;
+}
+
+.links {
+    text-decoration: none;
+}
+
+.box:hover {
+    opacity: 100%;
 }
 
 #professor {
     background-image: url("bioSite images/College Professor.jpg");
-    padding-top: 300px;
-    padding-bottom: 300px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-size: cover;
     background-attachment: fixed;
     background-position: 0% 0%;
@@ -191,8 +214,8 @@ footer a:hover {
 
 #shoreEx {
     background-image: url("bioSite images/Shore\ Excursions.jpg");
-    padding-top: 300px;
-    padding-bottom: 300px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -201,8 +224,8 @@ footer a:hover {
 
 #cruiseSales {
     background-image: url("bioSite images/Next\ Cruise.jpg");
-    padding-top: 300px;
-    padding-bottom: 300px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-size: cover;
     background-attachment: fixed;
     background-position: 0% 0%;
@@ -211,8 +234,8 @@ footer a:hover {
 
 #disney {
     background-image: url("bioSite images/Walt Disney World.jpg");
-    padding-top: 300px;
-    padding-bottom: 300px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-size: cover;
     background-attachment: fixed;
     background-position: 0% 0%;
@@ -228,6 +251,8 @@ footer a:hover {
 
 #movies {
     text-align: center;
+    width: 70%;
+    margin: auto;
 }
 
 #movies h3 {
@@ -250,12 +275,12 @@ footer a:hover {
     display: inline-block;
     width: 30%;
     padding: 15px;
+    font-size: 1.3em;
 }
 
 .movieImage {
     opacity: 1;
-    width: 100%;
-    height: 100%;
+    width: 75%;
     transition: .5s ease;
     backface-visibility: hidden;
 }
@@ -264,9 +289,9 @@ footer a:hover {
     transition: .5s ease;
     opacity: 0;
     position: absolute;
-    top: 40%;
+    top: 45%;
     left: 52%;
-    width: 100%;
+    width: 75%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
@@ -299,6 +324,12 @@ footer a:hover {
 
 #travel {
     text-align: center;
+    width: 70%;
+    margin: auto;
+}
+
+#travelpics {
+    text-align: center;
 }
 
 #travel h3 {
@@ -308,7 +339,7 @@ footer a:hover {
 
 #travel p {
     margin: 0;
-    padding-bottom: 5px;
+    padding-bottom: 15px;
 }
 
 /*Start of Modal*/
@@ -324,6 +355,7 @@ footer a:hover {
     opacity: 0.8;
     cursor: pointer;
     border-radius: 10px;
+    box-shadow: 0 4px 8px 0 #37659E, 0 6px 20px 0 #37659E;
 }
 
 .column img:hover {
@@ -346,20 +378,21 @@ footer a:hover {
 /* Expanding image text */
 #imgtext {
     position: absolute;
-    bottom: 15px;
-    left: 15px;
+    bottom: 5%;
+    left: 25%;
     background-color: #262631;
     color: #5f7897;
     font-family: 'Gudea', sans-serif;
+    font-weight: bold;
     padding: 10px;
     font-size: 20px;
+    width: 25%;
 }
 
 /* Closable button inside the expanded image */
 .closebtn {
     position: absolute;
-    top: 10px;
-    right: 15px;
+    right: 20%;
     color: white;
     font-size: 35px;
     cursor: pointer;
